@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>now</display-name>
+  
+<servlet>
+<servlet-name>News_Users</servlet-name>
+<servlet-class>com.news.servlet.News_UsersServlet</servlet-class>
+</servlet>
+<servlet>
+<servlet-name>News_News</servlet-name>
+<servlet-class>com.news.servlet.News_NewsServlet</servlet-class>
+</servlet>
+<servlet>
+<servlet-name>News_Topics</servlet-name>
+<servlet-class>com.news.servlet.News_TopicsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>News_Users</servlet-name>
+<url-pattern>/logintestcontrol</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>News_News</servlet-name>
+<url-pattern>/newscontrol</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+<servlet-name>News_Topics</servlet-name>
+<url-pattern>/topiccontrol</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>News_TopicsDelete</servlet-name>
+<servlet-class>com.news.servlet.News_TopicsDelete</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>News_TopicsDelete</servlet-name>
+<url-pattern>/topic_delete</url-pattern>
+</servlet-mapping>
+
+	<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
